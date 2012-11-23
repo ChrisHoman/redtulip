@@ -9,6 +9,7 @@
 body {
 	font-family: 'Quattrocento',Georgia,serif;
 	color: #104E75;
+	background-color: white;
 	background-position:0 0;
 	background-repeat:repeat repeat;
 }
@@ -25,9 +26,11 @@ h2 {
 .navbar.topbar, .topbar-inner {
 	border: 0px #31AAF5;
 }
-
-.topbar .topbar-inner {
+.topbar, .topbar .topbar-inner {
 	background-color: #2fa9f5;
+	color: #104E75;
+}
+.topbar .topbar-inner {
 	width:100%;
 	max-height: 60px;
 	z-index: 1000;
@@ -56,7 +59,6 @@ h2 {
 	font-size:large;
 	font-weight: normal;
 	line-height: 0.9;
-	color: #104E75;
 	margin-top: 31px;
 }
 
@@ -70,11 +72,13 @@ h2 {
 	list-style: none;
 	font-family: 'Quattrocento Sans',arial, sans-serif;
 	position: fixed;
+	background-color: inherit;
+	color: #555;
 }
 
 .tabrow li {
 	border: 0px solid #AAA;
-	background: #D1D1D1;
+	background-color: #D1D1D1;
 	background: -o-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
 	background: -ms-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
 	background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
@@ -92,14 +96,13 @@ h2 {
 }
 
 .tabrow li a {
-	color: #555;
 	text-decoration: none;
 	padding: 0px 12px;
 }
 
 .tabrow li a:hover {
 	text-decoration: underline;
-	background: inherit;
+	background-color: inherit;
 }
 
 .tabrow li.active {
@@ -120,6 +123,7 @@ h2 {
 
 
 .tabrow li.active a {
+	background-color: inherit;
 	color: white;
 }
 
@@ -187,7 +191,7 @@ h2 {
 	min-height: 20px;
 }
 
-.iosnav {	
+.iosnav {
 	margin-left: 0px;
 	text-align: center;
 	text-indent: 0px;
@@ -205,6 +209,7 @@ h2 {
 
 
 .tulip {
+	background-color: inherit;
 	color: #a82828;
 	vertical-align: top;
 	display: inline-block;
@@ -228,6 +233,7 @@ h2 {
 
 
 .no-fontface .tulip {
+	background-color: inherit;
 	color: inherit;
 	font-family: sans-serif;
 	font-size: 100%;
@@ -250,21 +256,21 @@ h2 {
 
 
 
-.postit {   
-	text-align:center;     
-	width: 175px;    
+.postit {
+	text-align:center;
+	width: 175px;
 	margin: -65px 25px 25px 25px;
 	height:120px;
 	padding:20px 20px 25px;
 	position:relative;
-	font-family:'Dancing Script', cursive;;    
-	font-size:36px;  
-	line-height: 36px;    
+	font-family:'Dancing Script', cursive;;
+	font-size:36px;
+	line-height: 36px;
 	color: #a82828;
-	border:1px solid #E8E8E8;  
+	border:1px solid #E8E8E8;
 	border-top:40px solid #fdfd86;
 	border-bottom-right-radius: 60px 5px;
-	display:inline-block;    
+	display:inline-block;
 	background: rgb(255,255,136); /* Old browsers */
 	background: -moz-linear-gradient(-45deg, rgba(255,255,136,1) 77%, rgba(255,255,214,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right bottom, color-stop(77%,rgba(255,255,136,1)), color-stop(100%,rgba(255,255,214,1))); /* Chrome,Safari4+ */
@@ -276,7 +282,7 @@ h2 {
 }
 
 
-.postit:after {     
+.postit:after {
 	content: "";
 	position:absolute;
 	z-index:-1;
@@ -290,7 +296,7 @@ h2 {
 	  -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
 	 -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
 	     transform: matrix(-1, -0.1, 0, 1, 0, 0);
-}  
+}
 .postit p, .postit p:hover {
 	font-family: 'Quattrocento Sans','Arial', sans-serif;
 	font-size: 16px;
@@ -314,6 +320,7 @@ h2 {
 	float:right;
 }
 .underline {
+	background-color: inherit;
 	color: #ef4141;
 }
 
@@ -329,7 +336,7 @@ ul.wi-container {
 	margin: 0 auto 30px;
 	position: relative;
 	padding: 0;
-	list-style-type: none; 
+	list-style-type: none;
 	-webkit-perspective: 1400px;
 	-moz-perspective: 1400px;
 	-ms-perspective: 1400px;
@@ -346,6 +353,7 @@ ul.wi-container li {
 	top: 30px;
 	left: 5px;
 	background-color: #f8f9f9;
+	color: inherit;
 	padding: 2px;
 	pointer-events: auto;
 }
@@ -442,7 +450,8 @@ ul.wi-container li.wi-move {
 	font-size: 36px;
 	margin:15px;
 	padding: 5px;
-	cursor: hand; cursor: pointer;
+	cursor: hand;
+	cursor: pointer;
 	color: #41aef1;
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.5), 0px -1px 1px rgba(255,255,255,0.8);
 	-webkit-user-select: none;
@@ -537,7 +546,7 @@ ul.wi-container {
    .subnav {
 	   display:none;
    }
-   
+
 .padding_top {
 	height: 10px;
 }
