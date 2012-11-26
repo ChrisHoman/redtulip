@@ -3,6 +3,13 @@
 $(".subnav ul li:first-child").addClass("active");
 
 
+
+// If the window gets resized or changes orientation, we loop raft again
+$(window).resize(function() {
+$('head').append('<meta name="viewport" content="initial-scale=1 maximum-scale=1"/>');
+});
+
+
 $("body").krioImageLoader();
 
 
@@ -22,7 +29,7 @@ $(".contactnow").click(function(e){
 	$(".panel").slideUp();
 	$(".Contact").slideDown();
 });
- 
+
 });
 
 
